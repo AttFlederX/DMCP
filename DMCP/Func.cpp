@@ -19,6 +19,58 @@ void Menu()
 		cout << "\nEnter the number of one of the options above: ";
 		cin >> choice;
 
+		switch (choice)
+		{
+		case 1:
+			SetsMenu();
+			break;
+		}
+
+	}
+}
+
+void SetsMenu()
+{
+	int choice = 0;
+
+	while (choice < 1 || choice > 4)
+	{
+		system("cls");
+
+		cout << "\nDMCP library/Sets\n\n";
+		cout << "\t >>> (1) Expression operations\n";
+		cout << "\t >>> (2) Byte operations\n";
+		cout << "\t >>> (3) Set operations\n";
+		cout << "\t >>> (4) Cartesian product\n";
+		cout << "\t >>> (5) Back\n";
+
+		cout << "\nEnter the number of one of the options above: ";
+		cin >> choice;
+
+		switch (choice)
+		{
+		case 1:
+			bool p, q;
+			cout << "\nEnter the value for p: ";
+			cin >> p;
+			cout << "\nEnter the value for q: ";
+			cin >> q;
+
+			cout << "\np = " << p;
+			cout << "\nq = " << q;
+
+			cout << "\n\np && q = " << (p && q);
+			cout << "\np || q = " << (p || q);
+			cout << "\np XOR q = " << (p != q);
+			cout << "\np => q = " << (!p || q);
+			cout << "\np == q = " << (p == q) << endl;
+			system("pause");
+
+			choice = 0;
+			break;
+		case 5:
+			Menu();
+		}
 
 	}
 }
