@@ -114,10 +114,12 @@
     <ClCompile Include="Func.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Set.cpp" />
+    <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Func.h" />
     <ClInclude Include="Set.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
