@@ -1,4 +1,5 @@
 #include "Func.h"
+#include "Lexicographic permutations.h"
 
 void Menu()
 {
@@ -22,8 +23,14 @@ void Menu()
 		switch (choice)
 		{
 		case 1:
+		
 			SetsMenu();
 			break;
+		
+		case 2:
+			CombinatoricsMenu();
+			break;
+
 		}
 
 	}
@@ -67,6 +74,36 @@ void SetsMenu()
 			system("pause");
 
 			choice = 0;
+			break;
+		case 5:
+			Menu();
+		}
+
+	}
+}
+
+void CombinatoricsMenu()
+{
+	int choice = 0;
+
+	while (choice < 1 || choice > 4)
+	{
+		system("cls");
+
+		cout << "\nDMCP library/Lexicographic permutation\n\n";
+		cout << "\t >>> (1) Find lexicographic permutation for value its length, which equals n\n";
+		cout << "\t >>> (2) Byte operations\n";
+		cout << "\t >>> (3) Set operations\n";
+		cout << "\t >>> (4) Cartesian product\n";
+		cout << "\t >>> (5) Back\n";
+
+		cout << "\nEnter the number of one of the options above: ";
+		cin >> choice;
+
+		switch (choice)
+		{
+		case 1:
+			Lexicographic_permutations();
 			break;
 		case 5:
 			Menu();
