@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Func.h" />
+    <ClInclude Include="lib.h" />
     <ClInclude Include="Set.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>

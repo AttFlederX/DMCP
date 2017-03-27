@@ -2,7 +2,7 @@
 #ifndef SET_H
 #define SET_H
 /* A class for representing sets(vector-like data type with no repeating elements) w/ standard operations. */
-#include "Func.h"
+#include "lib.h"
 //#include "Vector.h"
 
 class Set
@@ -23,6 +23,7 @@ public:
 	Set Union(Set X);
 	Set Intersection(Set X);
 	Set Difference(Set X);
+	bool IsSubset(Set X);
 	void Input();
 	void Print();
 };

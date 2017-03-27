@@ -1,5 +1,6 @@
 #include "Set.h"
 
+
 /* Parameter constructor for Set class. Includes checking routine that eliminates repeating elements*/
 Set::Set(vector<float> el, int l) 
 { 
@@ -116,6 +117,33 @@ Set Set::Difference(Set X)
 
 	return Set(R, setLen);
 }
+
+/* Checks whether X is a subset of a calling set */
+bool Set::IsSubset(Set X)
+{
+	int setXLen = X.Length();
+	bool isSub = true;
+
+	for (int i = 0; i < setXLen; i++)
+	{
+		bool isInSet = false;
+		for (int j = 0; j < len; j++)
+		{
+			if (Elements[j] == X[i])
+			{
+				isInSet = true;
+			}
+		}
+		if (!isInSet)
+		{
+			isSub = false;
+			break;
+		}
+	}
+
+	return isSub;
+}
+
 
 void Set::Input()
 {

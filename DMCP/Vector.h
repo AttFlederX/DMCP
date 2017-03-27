@@ -4,7 +4,7 @@
 
 #ifndef VECTOR_H
 #define VECTOR_H
-#include "Func.h"
+#include "lib.h"
 
 template <class T>
 class Vector
