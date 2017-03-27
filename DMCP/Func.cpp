@@ -25,6 +25,9 @@ void Menu()
 		case 1:
 			SetsMenu();
 			break;
+    case 2:
+			CombinatoricsMenu();
+			break;
 		default:
 			cout << "\n\nInvaild command or an unimplemented option\n\n";
 			system("pause");
@@ -149,6 +152,35 @@ void SetsMenu()
 
 	}
 }
+
+void CombinatoricsMenu()
+{
+	int choice = 0;
+
+	while (choice < 1 || choice > 4)
+	{
+		system("cls");
+
+		cout << "\nDMCP library/Lexicographic permutation\n\n";
+		cout << "\t >>> (1) Find lexicographic permutation for value its length, which equals n\n";
+		cout << "\t >>> (2) Byte operations\n";
+		cout << "\t >>> (3) Set operations\n";
+		cout << "\t >>> (4) Cartesian product\n";
+		cout << "\t >>> (5) Back\n";
+
+		cout << "\nEnter the number of one of the options above: ";
+		cin >> choice;
+
+		switch (choice)
+		{
+		case 1:
+			Lexicographic_permutations();
+			break;
+		case 5:
+			Menu();
+		}
+
+	}
 
 /* Prints the matrix in a single row instead of a grid */
 void PrintMatrixInRow(float** X, int n, int m)

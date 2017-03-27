@@ -7,6 +7,7 @@
 
 void Menu();
 void SetsMenu();
+void CombinatoricsMenu();
 void PrintMatrixInRow(float** X, int n, int m);
 float** CartesianProduct(Set* X, int n);
 
