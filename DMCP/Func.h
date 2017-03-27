@@ -1,7 +1,14 @@
 #pragma once
-#include <iostream>
+#ifndef FUNC_H
+#define FUNC_H
 
-using namespace std;
+#include "lib.h"
+#include "Set.h"
 
 void Menu();
 void SetsMenu();
+void CombinatoricsMenu();
+void PrintMatrixInRow(float** X, int n, int m);
+float** CartesianProduct(Set* X, int n);
+
+#endif

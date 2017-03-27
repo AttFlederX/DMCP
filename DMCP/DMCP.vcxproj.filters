@@ -24,7 +24,7 @@
     <ClCompile Include="Set.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Lexicographic permutations.cpp">
+    <ClCompile Include="Vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,7 +35,10 @@
     <ClInclude Include="Set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Lexicographic permutations.h">
+    <ClInclude Include="Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

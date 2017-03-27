@@ -1,16 +1,32 @@
 #pragma once
-#include "Func.h"
+#ifndef SET_H
+#define SET_H
+/* A class for representing sets(vector-like data type with no repeating elements) w/ standard operations. */
+#include "lib.h"
+//#include "Vector.h"
 
 class Set
 {
 private:
-	int* Elements;
-	int Len;
+	vector<float> Elements;
+	int len = 0;
 public:
-	Set() { Elements = new int[1]; Len = 1; };
-	Set(int n) { Elements = new int[n]; Len = n; }
-	int getLen() { return Len; }
-	Set Union(Set A, Set B);
-	Set Intersection(Set A, Set B);
-	Set Difference(Set A, Set B);
+	Set() { }
+	Set(vector<float> el, int l);
+	~Set() { Elements.clear(); }
+	int Length() { return len; }
+	void Add(float X);
+	float & operator [] (int i)
+	{
+		return Elements[i];
+	}
+	Set Union(Set X);
+	Set Intersection(Set X);
+	Set Difference(Set X);
+	bool IsSubset(Set X);
+	void Input();
+	void Print();
 };
+
+
+#endif
