@@ -1,6 +1,4 @@
-#include <iostream>
-
-using namespace std;
+#include "lib.h"
 
 void fill_initial_array(int *arr, int length_array)
 {

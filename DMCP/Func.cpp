@@ -1,5 +1,6 @@
 #include "Func.h"
 #include "Set.h"
+#include "Lexicographic permutations.h"
 
 void Menu()
 {
@@ -25,7 +26,7 @@ void Menu()
 		case 1:
 			SetsMenu();
 			break;
-    case 2:
+		case 2:
 			CombinatoricsMenu();
 			break;
 		default:
@@ -148,6 +149,7 @@ void SetsMenu()
 			cout << "\n\nInvaild command or an unimplemented option\n\n";
 			system("pause");
 			break;
+
 		}
 
 	}
@@ -181,6 +183,7 @@ void CombinatoricsMenu()
 		}
 
 	}
+}
 
 /* Prints the matrix in a single row instead of a grid */
 void PrintMatrixInRow(float** X, int n, int m)

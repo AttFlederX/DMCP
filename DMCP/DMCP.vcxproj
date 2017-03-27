@@ -112,12 +112,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Func.cpp" />
+    <ClCompile Include="Lexicographic permutations.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Set.cpp" />
     <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Func.h" />
+    <ClInclude Include="Lexicographic permutations.h" />
     <ClInclude Include="lib.h" />
     <ClInclude Include="Set.h" />
     <ClInclude Include="Vector.h" />
